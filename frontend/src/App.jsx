@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     async function fetchMovies() {
       try {
-        const response = await axios.get("http://localhost:8000/movies");
+        const response = await axios.get("https://movie-recommender-system-1-bko4.onrender.com/movies");
         setMovies(response.data);
         setFilteredMovies(response.data);
       } catch (err) {
@@ -43,7 +43,7 @@ function App() {
 
     try {
       const response = await axios.get(
-        `http://localhost:8000/recommend/${encodeURIComponent(input)}`
+        `https://movie-recommender-system-1-bko4.onrender.com/recommend/${encodeURIComponent(input)}`
       );
       if (response.data.error) {
         setError(response.data.error);

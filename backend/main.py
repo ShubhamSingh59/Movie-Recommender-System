@@ -11,6 +11,7 @@ PORT = 8000
 origins = [
     "http://localhost",
     "http://localhost:5173",
+    "https://movie-recommender-system-red.vercel.app/",
 ]
 # Allow CORS for React frontend running on localhost:3000
 app.add_middleware(

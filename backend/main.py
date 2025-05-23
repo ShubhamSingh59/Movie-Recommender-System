@@ -45,4 +45,4 @@ def recommend(movie_name: str):
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='localhost', port=PORT)
+    uvicorn.run(app, host='0.0.0.0', port=PORT)

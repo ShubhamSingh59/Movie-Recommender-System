@@ -22,8 +22,8 @@ app.add_middleware(
 )
 
 # Load models and data
-movies = pd.read_csv("../models/movies.csv")
-similarity = pickle.load(open("../models/similarity.pkl", 'rb'))
+movies = pd.read_csv("./models/movies.csv")
+similarity = pickle.load(open("./models/similarity.pkl", 'rb'))
 
 @app.get("/movies")
 def get_movies():
